@@ -1,10 +1,10 @@
-# 🚀 Enterprise URL Shortener Backend
+# Enterprise URL Shortener Backend
 
 High-Performance & Scalable URL Shortener System built with Node.js, TypeScript, PostgreSQL, Base62 Encoding Algorithm, and Docker.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** PostgreSQL 16 (With B-Tree Unique Indexing & Connection Pooling)
@@ -14,13 +14,15 @@ High-Performance & Scalable URL Shortener System built with Node.js, TypeScript,
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Prerequisites
+
 - Node.js >= 20
 - Docker & Docker Compose
 
 ### 2. Infrastructure Setup (Database)
+
 ```bash
 # Spin up PostgreSQL via Docker
 docker run --name postgres-shortener \
@@ -31,6 +33,7 @@ docker run --name postgres-shortener \
 ```
 
 ### 3. Application Setup
+
 ```bash
 # Clone Repository
 git clone https://github.com/DuongDevv/url-shortener-backend.git
@@ -48,11 +51,13 @@ npm run dev
 
 ---
 
-## 🔌 API Endpoints Specifications
+## API Endpoints Specifications
 
 ### 1. Create Short URL
+
 - **POST** `/api/v1/urls`
 - **Request Body:**
+
 ```json
 {
   "long_url": "https://google.com",
@@ -61,10 +66,12 @@ npm run dev
 ```
 
 ### 2. Redirect Engine
+
 - **GET** `/:shortKey`
 - **Response:** `302 Found` (Redirects to long URL)
 
 ---
 
-## 📄 License
+## License
+
 Licensed under the ISCLicense.
